@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "NSString+Path.h"
 
 @interface DownloaderOperation : NSOperation
 
-+ (instancetype)downloaderOperationWithURLString:(NSString *)urlString  AndSuccessBlock:(void(^)(UIImage *))successBlock;
++ (instancetype)downloaderOperationWithURLString:(NSString *)urlString  AndSuccessBlock:(void(^)(UIImage *image))successBlock;
 
 @end

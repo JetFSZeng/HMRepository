@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DownloadOperationManager.h"
 
 @interface UIImageView (Web)
+
+@property (copy,nonatomic) NSString *lastURLString;
+
+- (void)JET_setImageWithURLString:(NSString *)urlString;
 
 @end

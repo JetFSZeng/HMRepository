@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "DownloaderOperation.h"
 
 @interface DownloadOperationManager : NSObject
+
++ (instancetype)sharedManager;
+
+
+- (void)downloadWithURLString:(NSString *)urlString SuccessBlock:(void(^)(UIImage *image))successBlock;
+
+- (void)cancelDownloadingOperationWithLastURLString:(NSString *)lastURLString;
 
 @end
