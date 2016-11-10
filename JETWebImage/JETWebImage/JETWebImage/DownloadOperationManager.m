@@ -11,8 +11,8 @@
 @interface DownloadOperationManager ()
 
 @property (strong,nonatomic) NSOperationQueue *queue;
-@property (strong,nonatomic) NSMutableDictionary *operationsCache;
-@property (strong,nonatomic) NSMutableDictionary *imagesCache;
+@property (strong,nonatomic) NSCache *operationsCache;
+@property (strong,nonatomic) NSCache *imagesCache;
 
 @end
 
@@ -34,8 +34,8 @@
     if (self = [super init]) {
         
         _queue = [[NSOperationQueue alloc] init];
-        _operationsCache = [[NSMutableDictionary alloc] init];
-        _imagesCache = [[NSMutableDictionary alloc] init];
+        _operationsCache = [[NSCache alloc] init];
+        _imagesCache = [[NSCache alloc] init];
     }
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cleanMemoryCache) name:@"UIApplicationDidReceiveMemoryWarningNotification" object:nil];
@@ -45,10 +45,7 @@
 
 - (void)cleanMemoryCache
 {
-    if (_imagesCache.count != 0) {
-         [_imagesCache removeAllObjects];
-    }
-
+    [_imagesCache removeAllObjects];
 }
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D1003281DBF785F00895E56 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1003271DBF785F00895E56 /* NSString+Hash.m */; };
 		9D6B7A121DBCD43200E41A3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B7A111DBCD43200E41A3C /* main.m */; };
 		9D6B7A151DBCD43200E41A3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B7A141DBCD43200E41A3C /* AppDelegate.m */; };
 		9D6B7A181DBCD43200E41A3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B7A171DBCD43200E41A3C /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D1003261DBF785F00895E56 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		9D1003271DBF785F00895E56 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		9D6B7A0D1DBCD43200E41A3C /* JETWebImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JETWebImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6B7A111DBCD43200E41A3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9D6B7A131DBCD43200E41A3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 		9D6B7A271DBCD8D900E41A3C /* JETWebImage */ = {
 			isa = PBXGroup;
 			children = (
+				9D1003261DBF785F00895E56 /* NSString+Hash.h */,
+				9D1003271DBF785F00895E56 /* NSString+Hash.m */,
 				9D6B7A471DBCDE1C00E41A3C /* NSString+Path.h */,
 				9D6B7A481DBCDE1C00E41A3C /* NSString+Path.m */,
 				9D6B7A4A1DBCDE9200E41A3C /* DownloaderOperation.h */,
@@ -249,6 +254,7 @@
 				9D6B7A431DBCD94100E41A3C /* YYClassInfo.m in Sources */,
 				9D6B7A4F1DBCE00500E41A3C /* DownloadOperationManager.m in Sources */,
 				9D6B7A421DBCD94100E41A3C /* NSObject+YYModel.m in Sources */,
+				9D1003281DBF785F00895E56 /* NSString+Hash.m in Sources */,
 				9D6B7A181DBCD43200E41A3C /* ViewController.m in Sources */,
 				9D6B7A151DBCD43200E41A3C /* AppDelegate.m in Sources */,
 				9D6B7A4C1DBCDE9200E41A3C /* DownloaderOperation.m in Sources */,
@@ -413,6 +419,7 @@
 				9D6B7A261DBCD43200E41A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
